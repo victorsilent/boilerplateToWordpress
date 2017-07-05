@@ -3,6 +3,6 @@ input, textarea, select{
     border-radius: 0 !important;
     background: #eee !important;
 }
-input, select{
+input, select, input:not(type=checkbox){
     height: 45px !important;
 }

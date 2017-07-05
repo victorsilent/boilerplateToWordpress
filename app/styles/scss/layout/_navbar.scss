@@ -2,6 +2,11 @@
     box-shadow: 1px 1px 5px rgba(0,0,0,0.2) !important;
     border: none;
 }
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
 .navbar{
     padding-bottom: 30px;
     background-color: #fff;
