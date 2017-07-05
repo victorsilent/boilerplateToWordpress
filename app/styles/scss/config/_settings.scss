@@ -1,0 +1,19 @@
+//Cores
+$red: #d23642;
+$red-hover: darken($red, 10);
+$blue: #505f88;
+$blue-hover: #3c4877;
+$text: #646464;
+$title: #525252;
+
+$font-base: 'Hind', sans-serif;
+
+//Set global font-family
+body{
+    font-family: $font-base;
+}
+
+section{
+    margin-top: 70px;
+    margin-bottom: 40px;
+}

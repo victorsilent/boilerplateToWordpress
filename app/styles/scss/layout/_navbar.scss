@@ -1,0 +1,116 @@
+.navbar-fixed-top{
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.2) !important;
+    border: none;
+}
+.navbar{
+    padding-bottom: 30px;
+    background-color: #fff;
+    border-bottom: 0;
+    margin-bottom: 0;
+    font-size: 1.125em;
+    .navbar-nav{
+        li{
+            a{
+                margin-top: 30px;
+                &:hover, &:focus{
+                    color: $red;
+                }
+                &:active{
+                    color: $red-hover;
+                }
+            }
+        }
+        .active{
+            a{
+                color: $red;
+                background-color: #fff;
+                &:hover, &:focus{
+                    background: rgba(0,0,0,0.02) !important;
+                    color: $red;
+                }
+            }
+        }
+    }
+    .btn--red--outlined{
+        background-color: transparent;
+        border-radius: 0;
+        color: $red !important;
+        font-weight: normal;
+        padding: 20px 20px;
+        margin-left: 25px;
+        font-size: 1.125em;
+        margin-top: 22px !important;
+        @media(max-width: 768px){
+            margin-right: 25px;
+        }
+        &:hover, &:focus{
+            background-color: $red-hover !important;
+            border: 1px solid $red-hover !important;
+            color: #fff !important;
+            transition: all ease-in 200ms;
+        }
+        &:active{
+            background-color: $blue-hover !important;
+        }
+    }
+}
+
+@media (max-width: 1200px){
+    .navbar-brand{
+        img{
+            width: 80% !important;
+        }
+    }
+    .navbar-collapse{
+        margin-top: 20px;
+        border-top: 0 !important;
+        box-shadow: none;
+        
+    }
+    .navbar-header{
+        float: none;
+    }
+    .navbar-toggle{
+        display: block;
+        margin-top: 15px;
+    }
+    .navbar-collapse.collapse{
+        display: none !important
+    }
+    .navbar .navbar-nav{
+        float: none !important;
+        margin: 7.5px -15px;
+        background-color: rgba(255,255,255,1);
+        li{
+            a{
+                color: #000;
+            }
+        }
+    }
+    .navbar-nav>li{
+        float: none;
+        display: block;
+    }
+    .navbar-nav>li>a{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display: block !important;
+    }
+    .btn-outline-reverse-white{
+        display: none;
+    }
+}
+.navbar-brand{
+    img{
+        width: 100%;
+    }
+}
+
+.navbar-toggle{
+    margin-top: 45px;
+}
+.navbar-collapse{
+    margin-top: 20px;
+}
